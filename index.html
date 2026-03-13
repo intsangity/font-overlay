@@ -10,16 +10,18 @@
 
 <body>
     <h1>font-overlay</h1>
-    <h2>Inter vs. San Francisco</h2>
+    <h2>Font Comparison</h2>
 
     <div class="comparison">
-        <div class="text-layer sf" id="sf-text">
+        <div class="font-label left-label" id="left-label">San Francisco</div>
+        <div class="font-label right-label" id="right-label">Inter</div>
+        <div class="text-layer left" id="left-text">
             Typography is the art and technique of arranging type to make
             written language legible, readable, and appealing when displayed. The arrangement of type involves selecting
             typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting the space between
             pairs of letters.
         </div>
-        <div class="text-layer inter" id="inter-text">
+        <div class="text-layer right" id="right-text">
             Typography is the art and technique of arranging type to make
             written language legible, readable, and appealing when displayed. The arrangement of type involves selecting
             typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting the space between
@@ -28,6 +30,50 @@
     </div>
 
     <div class="controls">
+        <div class="control-group">
+            <label for="left-font">Left Font:</label>
+            <div class="control-row">
+                <select id="left-font">
+                    <option value="Inter">Inter</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Lato">Lato</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Source Sans 3">Source Sans 3</option>
+                    <option value="Nunito">Nunito</option>
+                    <option value="Raleway">Raleway</option>
+                    <option value="Poppins">Poppins</option>
+                    <option value="Work Sans">Work Sans</option>
+                    <option value="Libre Franklin">Libre Franklin</option>
+                    <option value="Maven Pro">Maven Pro</option>
+                    <option value="Myriad">Myriad</option>
+                    <option value="Vegur">Vegur</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="right-font">Right Font:</label>
+            <div class="control-row">
+                <select id="right-font">
+                    <option value="Inter">Inter</option>
+                    <option value="Roboto">Roboto</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Lato">Lato</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Source Sans 3">Source Sans 3</option>
+                    <option value="Nunito">Nunito</option>
+                    <option value="Raleway">Raleway</option>
+                    <option value="Poppins">Poppins</option>
+                    <option value="Work Sans">Work Sans</option>
+                    <option value="Libre Franklin">Libre Franklin</option>
+                    <option value="Maven Pro">Maven Pro</option>
+                    <option value="Myriad">Myriad</option>
+                    <option value="Vegur">Vegur</option>
+                </select>
+            </div>
+        </div>
+
         <div class="control-group">
             <label for="font-weight">Font weight: <span id="font-weight-value">400</span></label>
             <div class="control-row">
@@ -43,18 +89,18 @@
         </div>
 
         <div class="control-group">
-            <label for="sf-size">San Francisco font size (px): <span id="sf-size-value">20</span></label>
+            <label for="left-size">Left font size (px): <span id="left-size-value">20</span></label>
             <div class="control-row">
-                <input type="range" id="sf-size" min="8" max="80" step="1" value="20">
-                <button class="refresh-button" data-reset="sf-size" data-value="20">↺</button>
+                <input type="range" id="left-size" min="8" max="80" step="1" value="20">
+                <button class="refresh-button" data-reset="left-size" data-value="20">↺</button>
             </div>
         </div>
 
         <div class="control-group">
-            <label for="inter-size">Inter font size (px): <span id="inter-size-value">20</span></label>
+            <label for="right-size">Right font size (px): <span id="right-size-value">20</span></label>
             <div class="control-row">
-                <input type="range" id="inter-size" min="8" max="80" step="1" value="20">
-                <button class="refresh-button" data-reset="inter-size" data-value="20">↺</button>
+                <input type="range" id="right-size" min="8" max="80" step="1" value="20">
+                <button class="refresh-button" data-reset="right-size" data-value="20">↺</button>
             </div>
         </div>
 
